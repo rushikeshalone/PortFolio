@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- css style -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Javascript file -->
+    <link rel="stylesheet" href="/style.js">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Deve<span>loper</span></a>
+    </header>
+
+    <div id="sideNav">
+        <nav>
+            <a href="#" class="logo">&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        
+        <img class='bx bx-menu' id="menu" src="/Public/images/menu4.png">
+        
+    </div>
+
+    <script>
+        var menuBtn =document.getElementById("menuBtn")
+        var sideNav =document.getElementById("sideNav")
+        var menu =document.getElementById("menu")
+      
+        sideNav.style.right=="-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0";
+                sideNav.style.marginRight="10px";
+               
+                menu.src ="/Public/images/close.png"
+
+            }else{
+                sideNav.style.right="-250px";
+                menu.src ="/Public/images/menu4.png"
+            }
+        }
+
+    </script>
+
+    <!-- Home section Design -->
+    <section class="home show-animate" id="home">
+        
+        <div class="home-content">
+            <h1>I'm<span>Rushikesh Alone</span></h1>
+            <div class="text-animate">
+                <h3>Frontend Developer</h3>
+            </div>
+            <p>I am skilled and motivated software developer withexpertise in HTML, CSS, JavaScript, Bootstrap, SQL.<br>
+                With astrong passion for coding and problem-solving,I amdedicated to developing efficient <br>and
+                user-friendlysoftware solutions. As a detail-oriented professional, <br>Istrive for excellence in all
+                aspects of softwaredevelopment.
+
+            </p>
+            <div class="btn-box">
+                <a href="/Public/Doc/CV.pdf" target="_blank" class="btn">Resume</a>
+                <a href="https://github.com/rushikeshalone?tab=repositories" target="_blank" class="btn">Project</a>
+            </div>
+        </div>
+        <div class="about-img">
+            <img src="/Public/images/menu.png" id="cir" alt="">
+            <span class="circle-spin" id="circl"></span>
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+
+        </div>
+        <div class="home-imgHover"></div>
+    </section>
+
+    <!-- about section Design -->
+
+    <section class="about" id="about">
+        <h2 class="heading">About<span>Me</span></h2>
+        <div class="about-img">
+            <img src="/Public/images/menu.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Frontend Developer!</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus laborum tempora voluptate ad?
+                Tempore dicta culpa id, voluptas aut rerum.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Natus laborum tempora voluptate ad?
+                Tempore dicta culpa id, voluptas aut rerum.</p>
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- education details design -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2014</div>
+                            <h3>SSC Exam</h3>
+                            <h3>Janta High School Khairgaon</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quaerat obcaecati repellendus eius asperiores iusto harum quae, amet ipsum similique
+                                totam illo nesciunt beatae delectus, placeat porro? Quas provident obcaecati veniam!</p>
+                        </div>
+                    </div>
+                    <!-- ---first -->
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2016</div>
+                            <h3>HSC Exam</h3>
+                            <h3>Mahatma Fule Junior College Warud</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quaerat obcaecati repellendus eius asperiores iusto harum quae, amet ipsum similique
+                                totam illo nesciunt beatae delectus, placeat porro? Quas provident obcaecati veniam!</p>
+                        </div>
+                    </div>
+                    <!-- ---secound -->
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2021</div>
+                            <h3>Bachlore Of Engineering</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quaerat obcaecati repellendus eius asperiores iusto harum quae, amet ipsum similique
+                                totam illo nesciunt beatae delectus, placeat porro? Quas provident obcaecati veniam!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Experience Section Dessign -->
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2014</div>
+                            <h3>Software Developer</h3>
+                            <h3>Trust Software & Solution</h3>
+                            <p>I worked  vb.net Technology ,asp.net and sql Technology</p>
+                        </div>
+                    </div>
+                    <!-- ---first -->
+
+                    <!-- <div class="education-content">
+            <div class="content">
+                <div class="year"><i class='bx bxs-calendar'></i>2016</div>
+                <h3>MaasterDegree-University</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quaerat obcaecati repellendus eius asperiores iusto harum quae, amet ipsum similique
+                    totam illo nesciunt beatae delectus, placeat porro? Quas provident obcaecati veniam!</p>
+            </div>
+        </div> -->
+                    <!-- ---secound -->
+                    <!-- <div class="education-content">
+            <div class="content">
+                <div class="year"><i class='bx bxs-calendar'></i>2021</div>
+                <h3>MaasterDegree-University</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quaerat obcaecati repellendus eius asperiores iusto harum quae, amet ipsum similique
+                    totam illo nesciunt beatae delectus, placeat porro? Quas provident obcaecati veniam!</p>
+            </div>
+        </div> -->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section Design -->
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-row">
+            <!-- Coding Skills -->
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>CSS <span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Javascript <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Bootstrap <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>React<span>52%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Skills -->
+
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>SQL<span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>MongoDB<span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>NodeJs<span>50%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>ExpressJS<span>40%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact  Section Design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="Number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Massege"></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer Design -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Rushikesh Alone || All Right Reserved.!</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
